@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Kvíz - část 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz">
+
+        <div class="page active" id="question1">
+            <fieldset>
+                <h2>1. Co je hlavní město České republiky?</h2>
+
+                <label>
+                    <input type="radio" name="q1" value="brno">
+                    Brno
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="praha">
+                    Praha
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="ostrava">
+                    Ostrava
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="plzen">
+                    Plzeň
+                </label>
+
+                <button onclick="submitQuestion(1)">Odeslat</button>
+                <button onclick="nextQuestion()">Další otázka</button>
+            </fieldset>
+        </div>
+
+        <div class="page" id="question2">
+            <fieldset>
+                <h2>2. Kolik je 5 + 3?</h2>
+
+                <label>
+                    <input type="radio" name="q2" value="6">
+                    6
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="7">
+                    7
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="8">
+                    8
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="9">
+                    9
+                </label>
+
+                <button onclick="submitQuestion(2)">Odeslat</button>
+                <button onclick="previousQuestion()">Předchozí otázka</button>
+            </fieldset>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
